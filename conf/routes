@@ -29,3 +29,10 @@ GET		/user						controllers.Application.user()
 
 GET		/body						controllers.BodyApp.index()
 GET		/bodyToJson					controllers.BodyApp.indexToJson()
+
+
+# eBean
+
+GET		/list						controllers.EBeanSampleApp.list()
+GET		/save						controllers.EBeanSampleApp.save()
+

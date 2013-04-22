@@ -16,8 +16,7 @@ public class BodyApp extends Controller {
 	@BodyParser.Of(BodyParser.Json.class)	
 	public static Result indexToJson() {
 		return ok("got body : " + request().body().asJson());
-	}
-	
+	}	
 	
 	@Authenticated
 	public static Result test() {
