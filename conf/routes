@@ -7,3 +7,25 @@ GET     /                           controllers.Application.index()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+
+GET		/test						controllers.Application.test()
+
+#localhost:9001/test2/1234
+GET		/test2/:id					controllers.Application.test2(id:Long) 
+
+GET		/test3/$id<[0-9]>			controllers.Application.test2(id:Long)
+
+GET		/test4/						controllers.Application.test4(id = "10")
+GET		/test4/:id					controllers.Application.test4(id:String)
+
+GET		/test5/:page				controllers.Application.test5(page: Integer)
+GET		/test5/						controllers.Application.test5(page: Integer ?= 1)
+
+
+GET		/user						controllers.Application.user()
+
+# Body
+
+GET		/body						controllers.BodyApp.index()
+GET		/bodyToJson					controllers.BodyApp.indexToJson()
