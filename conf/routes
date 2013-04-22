@@ -34,3 +34,5 @@ GET		/bodyToJson					controllers.BodyApp.indexToJson()
 
 GET		/list						controllers.EBeanSampleApp.list()
 GET		/save						controllers.EBeanSampleApp.save()
+
+GET			/test2											controllers.Application.index()
